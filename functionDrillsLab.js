@@ -5,7 +5,10 @@
 */
 
 //CODE HERE
-
+function helloWorld() {
+  console.log("Hello, World!")
+}
+helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 /*
@@ -15,8 +18,10 @@
 */
 
 //CODE HERE
-
-
+function printName(name) {
+  console.log(name)
+}
+printName("Cameron")
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called greeting that
@@ -29,7 +34,11 @@
 */
 
 //CODE HERE
-
+function greeting(name) {
+  let stringName = String(name)
+  console.log(`Hello, ${stringName}`)
+}
+greeting("Jake")
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -40,8 +49,13 @@
 */
 
 //CODE HERE
-
-
+function add(num1, num2) {
+  num1 = Number(num1)
+  num2 = Number(num2)
+  return num1 + num2
+}
+let sum = add(10, 19)
+console.log(sum)
 ////////////////// PROBLEM 5 ////////////////////
 /*
   Write a function called nameCheck that takes in a name parameter.
@@ -52,8 +66,17 @@
 */
 
 //CODE HERE
-
-
+function nameCheck(name) {
+  if (name === "Steven") {
+    return "What is up Steven?"
+  } else if (name === "Bryan") {
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}`
+  }
+}
+let nameGreeting = nameCheck("John")
+console.log(nameGreeting)
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
@@ -65,8 +88,19 @@
 */
 
 //CODE HERE
-
-
+function faveColorFinder(color) {
+  if (color === "red") {
+    return "red is a great color"
+  } else if (color === "green") {
+    return "green is a solid favorite color"
+  } else if (color === "black") {
+    return "so trendy"
+  } else {
+    return "you need to evaluate your favorite color choice"
+  }
+}
+let colorRating = faveColorFinder("orange")
+console.log(colorRating)
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
@@ -76,8 +110,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
-
+function printAllNames (names) {
+  for(i=0; i<names.length; i++) {
+    console.log(names[i])
+  }
+}
+printAllNames(namesArr)
 ////////////////// PROBLEM 8 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
